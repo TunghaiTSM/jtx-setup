@@ -5,7 +5,7 @@ build:
 	cd JTX && cp ~/.env ./.env \
 		&& npm install && composer install \
 		&& php artisan key:generate \
-		&& php artisan storage:link
+		&& php artisan storage:link \
 		&& php artisan migrate:refresh --seed \
 		&& phpstorm .
 
