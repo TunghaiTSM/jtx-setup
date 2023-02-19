@@ -8,4 +8,4 @@ apt -y install php-common  composer nodejs curl mysql-client \
 snap install docker &
 snap install phpstorm --classic
 docker run --rm -p 3306:3306 --name=jtx-mysql -eMYSQL_ROOT_PASSWORD=root -d mysql:latest
-mysql -u root --host=127.0.0.1 -P 3306 -proot -e "CREATE DATABASE jtx"
+mysql -u root --host=127.0.0.1 -P 3306 -p -e "CREATE DATABASE jtx"
